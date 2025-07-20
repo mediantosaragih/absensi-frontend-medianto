@@ -14,14 +14,16 @@ return new class extends Migration
         Schema::create('attendance_histories', function (Blueprint $table) {
             $table->id();
             $table->string('employee_id', 50);
-            $table->unsignedBigInteger('attendance_id');
+            //$table->unsignedBigInteger('attendance_id');
+            $table->string('attendance_id', 100);
             $table->timestamp('date_attendance')->nullable();
             $table->tinyInteger('attendance_type')->comment('1 = In, 2 = Out');
             $table->text('description')->nullable();
             $table->timestamps();
 
             $table->foreign('employee_id')->references('employee_id')->on('employees')->onDelete('cascade');
-            $table->foreign('attendance_id')->references('id')->on('attendances')->onDelete('cascade');
+            $table->foreign('attendance_id')->references('attendance_id')->on('attendances')->onDelete('cascade');
+            //$table->foreign('attendance_id')->references('id')->on('attendances')->onDelete('cascade');
         });
     }
 
