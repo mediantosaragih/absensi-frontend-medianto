@@ -1,7 +1,7 @@
-# Absensi Backend - Fleetify Challenge
+# Absensi Frontend - Fleetify Challenge
 
 ## 📋 Deskripsi
-Sistem absensi untuk perusahaan dengan lebih dari 50 karyawan dan multi-departemen, dibuat menggunakan Laravel (Backend) dan MySQL.
+Sistem absensi untuk perusahaan dengan lebih dari 50 karyawan dan multi-departemen, dibuat menggunakan Laravel (Frontend) dan MySQL.
 
 ## 🚀 Fitur
 - CRUD Karyawan
@@ -19,8 +19,8 @@ Sistem absensi untuk perusahaan dengan lebih dari 50 karyawan dan multi-departem
 ## 🔧 Instalasi
 
 ```bash
-git clone https://github.com/mediantosaragih/absensi-backend-medianto.git
-cd absensi-backend-medianto
+git clone https://github.com/mediantosaragih/absensi-frontend-medianto.git
+cd absensi-frontend-medianto
 composer install
 cp .env.example .env
 php artisan key:generate
