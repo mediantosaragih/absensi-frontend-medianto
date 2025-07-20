@@ -12,16 +12,15 @@ Sistem absensi untuk perusahaan dengan lebih dari 50 karyawan dan multi-departem
 - Filter by Tanggal & Departemen
 
 ## ⚙️ Teknologi
-- Laravel 10
+- Laravel 12
 - MySQL
-- Bootstrap (jika frontend pakai Blade)
 - RESTful API
 
 ## 🔧 Instalasi
 
 ```bash
-git clone https://github.com/namamu/absensi-backend-namamu.git
-cd absensi-backend-namamu
+git clone https://github.com/mediantosaragih/absensi-backend-medianto.git
+cd absensi-backend-medianto
 composer install
 cp .env.example .env
 php artisan key:generate
